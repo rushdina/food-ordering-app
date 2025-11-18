@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Ordering App</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-inner">
+        <h1>Jimmy's Diner</h1>
+        <p>The best burgers and pizzas in town.</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="container" id="container">
+        <div id="menu-container">
+          <!-- Menu cards -->
+        </div>
+        <div id="order-container" class="hidden">
+          <h2>Your Order</h2>
+          <div id="order-list">
+            <!-- Order list cards-->
+          </div>
+          <div id="order-total-price">
+            <h2>Total price:</h2>
+            <span id="total-price"><!-- Total price--></span>
+          </div>
+          <button id="order-btn">Complete Order</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Payment Modal dialog box -->
+    <div class="payment-modal-container" id="payment-modal-container">
+      <div id="modal-close-btn-container">
+        <button id="modal-close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div id="payment-modal-inner">
+        <form id="payment-form" novalidate>
+          <h2 class="payment-header">Enter card details</h2>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="John" required />
+          <p id="name-error" class="error-msg"></p>
+
+          <label for="card-num">Card number:</label>
+          <input
+            type="text"
+            id="card-num"
+            pattern="[0-9]{13,16}"
+            minlength="13"
+            maxlength="16"
+            placeholder="0123456789..."
+            required
+          />
+          <p id="card-error" class="error-msg"></p>
+
+          <label for="cvv">CVV:</label>
+          <input
+            type="text"
+            id="cvv"
+            pattern="[0-9]{3}"
+            maxlength="3"
+            placeholder="123"
+            required
+          />
+          <p id="cvv-error" class="error-msg"></p>
+
+          <button type="submit" id="pay-btn">Pay</button>
+        </form>
+      </div>
+    </div>
+
+    <div>
+      <p>test</p>
+    </div>
+
+    <script src="index4.js" type="module"></script>
+  </body>
+</html>

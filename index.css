@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+#payment-modal-container {
+  display: none;
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.9rem;
+  margin: 4px 0 10px;
+}
