@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant Ordering App</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome-->
     <link
@@ -17,9 +25,9 @@
   </head>
   <body>
     <header id="header">
-      <div class="header-inner">
+      <div class="header-inner container">
         <h1>Jimmy's Diner</h1>
-        <p>The best burgers and pizzas in town.</p>
+        <p class="subheader">The best burgers and pizzas in town.</p>
       </div>
     </header>
 
@@ -33,62 +41,64 @@
           <div id="order-list">
             <!-- Order list cards-->
           </div>
-          <div id="order-total-price">
-            <h2>Total price:</h2>
-            <span id="total-price"><!-- Total price--></span>
+          <div class="order-total">
+            <p>Total Price:</p>
+            <span class="total-price"><!-- Total price--></span>
           </div>
           <button id="order-btn">Complete Order</button>
         </div>
+        <div id="receipt-container"><!-- Thank you and receipt --></div>
       </div>
     </main>
 
+    <div id="modal-overlay"></div>
+
     <!-- Payment Modal dialog box -->
-    <div class="payment-modal-container" id="payment-modal-container">
-      <div id="modal-close-btn-container">
-        <button id="modal-close-btn">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
+    <div id="payment-modal-container">
+      <button id="modal-close-btn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
 
       <div id="payment-modal-inner">
         <form id="payment-form" novalidate>
           <h2 class="payment-header">Enter card details</h2>
-          <label for="name">Name:</label>
-          <input type="text" id="name" placeholder="John" required />
-          <p id="name-error" class="error-msg"></p>
 
-          <label for="card-num">Card number:</label>
-          <input
-            type="text"
-            id="card-num"
-            pattern="[0-9]{13,16}"
-            minlength="13"
-            maxlength="16"
-            placeholder="0123456789..."
-            required
-          />
-          <p id="card-error" class="error-msg"></p>
+          <div class="form-inner">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="John" required />
+            <p id="name-error" class="error-msg">Please fill out your name.</p>
 
-          <label for="cvv">CVV:</label>
-          <input
-            type="text"
-            id="cvv"
-            pattern="[0-9]{3}"
-            maxlength="3"
-            placeholder="123"
-            required
-          />
-          <p id="cvv-error" class="error-msg"></p>
+            <label for="card-num">Card number:</label>
+            <input
+              type="text"
+              id="card-num"
+              pattern="[0-9]{13,16}"
+              minlength="13"
+              maxlength="16"
+              placeholder="0123456789..."
+              required
+            />
+            <p id="card-error" class="error-msg">
+              Card number must be 13–16 digits.
+            </p>
+
+            <label for="cvv">CVV:</label>
+            <input
+              type="text"
+              id="cvv"
+              pattern="[0-9]{3}"
+              maxlength="3"
+              placeholder="123"
+              required
+            />
+            <p id="cvv-error" class="error-msg">CVV must be 3 digits.</p>
+          </div>
 
           <button type="submit" id="pay-btn">Pay</button>
         </form>
       </div>
     </div>
 
-    <div>
-      <p>test</p>
-    </div>
-
-    <script src="index4.js" type="module"></script>
+    <script src="script.js" type="module"></script>
   </body>
 </html>

@@ -1,0 +1,305 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Smythe", sans-serif;
+  background-color: antiquewhite;
+  background-color: #f8fafd;
+}
+
+main,
+header {
+  width: 600px;
+  margin: 0 auto;
+}
+
+/* TYPOGRAPHY */
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2,
+.order-price,
+.order-total,
+.receipt-total {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+/* HEADER */
+
+header {
+  background-image: url(./images/header-hamburger.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center 65%; /* horizontal center, vertical % from the top */
+  height: 167px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.container {
+  padding: 46px;
+}
+
+.subheader {
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+/* MENU CONTAINER */
+
+.menu-card,
+.order-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 36px 0;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.menu-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.qty-btns {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.menu-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.menu-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+/* Quantity Display & Buttons */
+.qty-container {
+  width: 36px;
+  text-align: center;
+}
+
+.qty-display {
+  font-size: 20px;
+}
+
+button[data-minus],
+button[data-plus] {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #dedede;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button[data-minus]:active,
+button[data-plus]:active {
+  background-color: #dedede;
+}
+
+button[data-minus]:disabled {
+  background-color: #eee;
+  color: #999;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* ORDER CONTAINER */
+.hidden {
+  display: none;
+}
+
+#order-container {
+  padding-top: 36px;
+}
+
+#order-container > h2 {
+  text-align: center;
+}
+
+.order-price {
+  margin-left: auto;
+}
+
+.order-details > h2 {
+  margin-bottom: 10px;
+}
+
+.order-total,
+.receipt-total {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #393333;
+  padding: 20px 0;
+}
+
+#order-btn,
+#pay-btn,
+#back-btn {
+  width: 100%;
+  padding: 28px 0;
+  margin-top: 36px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #16db99;
+  cursor: pointer;
+}
+
+#order-btn:hover,
+#pay-btn:hover,
+#back-btn:hover {
+  background-color: #01d38d;
+}
+
+/* MODAL CONTAINER */
+#modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.041);
+  display: none; /* hidden until modal opens */
+  pointer-events: all; /* blocks clicks on background */
+  z-index: 999;
+}
+
+#payment-modal-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 524px;
+  height: 736px;
+  border-radius: 4px;
+  box-shadow: 5.19px 5.19px 255.44px rgba(0, 0, 0, 0.5);
+  background-color: #f8fafd;
+  z-index: 1000;
+}
+
+#modal-close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border: 1px solid #dedede;
+  color: #393333;
+  cursor: pointer;
+}
+
+#payment-modal-inner {
+  padding: 80px 30px;
+}
+
+form {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.form-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.payment-header {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+form label,
+form input {
+  font-size: 20px;
+}
+
+form input {
+  padding: 18px;
+  border-radius: 4px;
+  border: 1.3px solid #757575;
+}
+
+.error-msg {
+  color: red;
+  font-size: 16px;
+  margin: 4px 0 10px;
+  visibility: hidden;
+}
+
+#pay-btn {
+  margin-top: 0px;
+}
+
+/* RECEIPT CONTAINER */
+#receipt-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 36px;
+}
+
+.thank-inner,
+.receipt-wrapper {
+  padding: 36px;
+  border: 2px solid #065f469a;
+  background-color: #ecfdf5;
+  border-radius: 4px;
+}
+
+.thank-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #065f46;
+  font-size: 32px;
+}
+
+.receipt-wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#back-btn {
+  width: 100%;
+}
