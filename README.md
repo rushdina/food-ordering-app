@@ -29,8 +29,11 @@ A restaurant ordering app where users can add menu items to an order, adjust qua
   
 ## 🖼️ Preview
 
-![Food Ordering App Preview Screenshot](images/screenshot-food-ordering-app-1.png)
-![Food Ordering App Preview Screenshot](images/screenshot-food-ordering-app-2.png)
+![Default Menu State](images/preview/preview-default-state.png)
+![Menu with Selected Items Before Checkout](images/preview/preview-pre-checkout-state.png)
+![Checkout Payment Modal Open](images/preview/preview-checkout-payment-modal-state.png)
+![Checkout Payment Modal with Validation Errors](images/preview/preview-checkout-payment-modal-validation.png)
+![Order Complete Receipt and Thank You Screen](images/preview/preview-order-complete-state.png)
 
 ## 📚 Sources & References
 - Scrimba course: [Scrimba Frontend Developer Career Path](https://scrimba.com/frontend-path-c0j)
