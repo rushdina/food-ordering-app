@@ -1,7 +1,7 @@
 # 🍔 Food Ordering App
 
 A solo project from the [Scrimba Frontend Developer Career Path](https://scrimba.com/frontend-path-c0j).  
-This is a restaurant ordering app that lets users add menu items to an order, adjust quantities, and complete payment with a simple modal form to receive a receipt. The app dynamically updates the order list and total price using JavaScript.
+A restaurant ordering app where users can add menu items to an order, adjust quantities, and complete payment with a simple modal form to receive a receipt. The app dynamically updates the order list and total price using JavaScript.
 
 ## 🛠️ Technologies
 - HTML5  
