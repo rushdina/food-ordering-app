@@ -6,7 +6,7 @@ A restaurant ordering app where users can add menu items, adjust quantities, and
 ## 🛠️ Tech Stack
 - HTML5
 - CSS3
-- JavaScript (ES6+)
+- JavaScript (ES6)
 
 ## 🚀 Features
 - Render menu dynamically from JS data array.
