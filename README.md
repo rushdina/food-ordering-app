@@ -4,9 +4,9 @@ A solo project from the [Scrimba Frontend Developer Career Path](https://scrimba
 A restaurant ordering app where users can add menu items, adjust quantities, and complete payment via a simple modal form. Orders and total prices update dynamically in real-time.
 
 ## 🛠️ Tech Stack
-- HTML  
-- CSS  
-- JavaScript
+- HTML5
+- CSS3
+- JavaScript (ES6+)
 
 ## 🚀 Features
 - Render menu dynamically from JS data array.
