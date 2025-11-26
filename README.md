@@ -39,5 +39,5 @@ Users can add/remove menu items, adjust quantities, and complete payment via a m
   - "Pizza on brown wooden table" by [Saahil Khatkhate](https://unsplash.com/@saahilkhatkhate?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/pizza-on-brown-wooden-table-kfDsMDyX1K0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
   - "Burger with lettuce and tomato" by [Giorgi Iremadze](https://unsplash.com/@giorgiiremadze?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/burger-with-lettuce-and-tomato-5ZR4DxAG3RQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
   - "Coca-Cola can" by [Mae Mu](https://unsplash.com/@picoftasty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/coca-cola-can-z8PEoNIlGlg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-- **Additional code improvements by me**
+
   
