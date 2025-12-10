@@ -14,7 +14,7 @@ Users can add/remove menu items, adjust quantities, and complete payment via a m
 - Real-time total price updates.
 - Payment modal form with validation and receipt.
 
-## 🧠 What I Learned 
+## 🧩 Concepts Practiced 
 - DOM manipulation & template rendering.
 - Event delegation for dynamic elements.
 - State management with arrays/objects.
