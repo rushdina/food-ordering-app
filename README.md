@@ -1,7 +1,7 @@
 # 🍔 Food Ordering App
 
 A food ordering app solo project from the [Scrimba Frontend Developer Career Path](https://scrimba.com/frontend-path-c0j).  
-Users can add/remove menu items, adjust quantities, and complete payment via a modal form with real-time order and total updates.
+Allows users to select menu items, manage their order, and complete a payment with a validated form.
 
 ## 🖼️ Preview
 🔗 Live Demo: https://scrimba-food-ordering-app-rushdina.netlify.app/
