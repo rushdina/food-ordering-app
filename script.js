@@ -197,6 +197,12 @@ document.addEventListener("click", (e) => {
 paymentForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
+  const [nameError, cardError, cvvError] = [
+    "name-error",
+    "card-error",
+    "cvv-error",
+  ].map((id) => document.getElementById(id));
+
   let valid = true;
 
   // Name
