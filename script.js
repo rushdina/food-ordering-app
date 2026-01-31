@@ -38,7 +38,7 @@ function getMenuHtml(arr) {
           </button>
         </div>
       </section>
-    `
+    `,
     )
     .join("");
 }
@@ -74,7 +74,7 @@ function renderOrder(arr, { showButtons = true } = {}) {
           <p>$${(price * quantity).toFixed(2)}</p>
         </div>
       </section>
-    `
+    `,
     )
     .join("");
 }
@@ -94,7 +94,7 @@ function updateQtyDisplays(id) {
 function updateTotalPrice() {
   const total = ordersArray.reduce(
     (sum, item) => sum + item.price * item.quantity,
-    0
+    0,
   );
   document
     .querySelectorAll(".total-price")
@@ -111,7 +111,7 @@ function resetOrderState() {
 function resetForm() {
   paymentForm.reset();
   ["name-error", "card-error", "cvv-error"].forEach(
-    (id) => (document.getElementById(id).style.visibility = "hidden")
+    (id) => (document.getElementById(id).style.visibility = "hidden"),
   );
 }
 
