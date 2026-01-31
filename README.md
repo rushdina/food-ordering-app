@@ -1,36 +1,30 @@
 # 🍔 Food Ordering App
 
-A restaurant ordering app solo project from the [Scrimba Frontend Developer Career Path](https://scrimba.com/frontend-path-c0j).  
+A food ordering app solo project from the [Scrimba Frontend Developer Career Path](https://scrimba.com/frontend-path-c0j).  
 Users can add/remove menu items, adjust quantities, and complete payment via a modal form with real-time order and total updates.
 
-## 🛠️ Tech Stack
-- HTML5
-- CSS3
-- JavaScript (ES6)
-
-## 🚀 Features
-- Render menu dynamically from JS data array.
-- Add/remove items and adjust quantities.
-- Real-time total price updates.
-- Payment modal form with validation and receipt.
-
-## 🧩 Concepts Practiced 
-- DOM manipulation & template rendering.
-- Event delegation for dynamic elements.
-- State management with arrays/objects.
-- Form validation & error handling.
-- Writing reusable JS functions.
-
-## 💡 Future Improvements
-- Meal deal discounts.
-- User ratings and feedback.
-  
 ## 🖼️ Preview
+🔗 Live Demo: https://scrimba-food-ordering-app-rushdina.netlify.app/
 
-![Menu and Checkout States](images/preview/preview-menu-and-checkout-state.png)
-![Payment Modal and Receipt Screens](images/preview/preview-payment-and-receipt-screens.png)
+![Menu and Checkout States Preview](images/preview/preview-menu-and-checkout-state.png)
+![Payment Modal and Receipt Screens Preview](images/preview/preview-payment-and-receipt-screens.png)
 
-## 🙌 Credits
+## 🛠️ Tech Stack
+- HTML, CSS, JavaScript
+
+## 📚 What I Learned 
+- Dynamically rendering menus and orders with JS
+- State management for order items and quantities
+- Event delegation for interactive buttons
+- Form validation and controlled inputs for payment
+- Rendering a receipt after successful payment
+- DOM updates without page reload
+  
+## 💡 Future Improvements
+- Meal deal discounts
+- User ratings and feedback
+
+## 🙌 Acknowledgements
 - **Scrimba course:** [Scrimba Frontend Developer Career Path](https://scrimba.com/frontend-path-c0j)
 - **Design reference:** [Figma by Scrimba](https://www.figma.com/design/Hdgwo69Dym9vVsxbuPbl0h/Mobile-Restaurant-Menu?node-id=0-1&p=f&t=0pmwW3YRJICNIzq9-0)
 - **Icons:** [Font Awesome](https://fontawesome.com/)
