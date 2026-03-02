@@ -1,7 +1,6 @@
 # 🍔 Food Ordering App
 
-A food ordering app solo project from the [Scrimba Frontend Developer Career Path](https://scrimba.com/frontend-path-c0j).  
-Allows users to select menu items, manage their order, and complete a payment with a validated form.
+A food ordering app that allows users to select menu items, manage their order, and complete a payment with a validated form.
 
 ## 🖼️ Preview
 🔗 Live Demo: https://scrimba-food-ordering-app-rushdina.netlify.app/
@@ -9,8 +8,9 @@ Allows users to select menu items, manage their order, and complete a payment wi
 ![Menu and Checkout States Preview](images/preview/preview-menu-and-checkout-state.png)
 ![Payment Modal and Receipt Screens Preview](images/preview/preview-payment-and-receipt-screens.png)
 
-## 🛠️ Tech Stack
-- HTML, CSS, JavaScript
+## 🛠️ Technologies Used
+- **Frontend:** `HTML`, `CSS`, `JavaScript`
+- **Icons:** [Font Awesome](https://fontawesome.com/)
 
 ## 📚 What I Learned 
 - Dynamically rendering menus and orders with JS
@@ -27,7 +27,6 @@ Allows users to select menu items, manage their order, and complete a payment wi
 ## 🙌 Acknowledgements
 - **Scrimba course:** [Scrimba Frontend Developer Career Path](https://scrimba.com/frontend-path-c0j)
 - **Design reference:** [Figma by Scrimba](https://www.figma.com/design/Hdgwo69Dym9vVsxbuPbl0h/Mobile-Restaurant-Menu?node-id=0-1&p=f&t=0pmwW3YRJICNIzq9-0)
-- **Icons:** [Font Awesome](https://fontawesome.com/)
 - **Image assets:** Provided by Scrimba
 - **Additional photos from Unsplash:**
   - "Pizza on brown wooden table" by [Saahil Khatkhate](https://unsplash.com/@saahilkhatkhate?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/pizza-on-brown-wooden-table-kfDsMDyX1K0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
